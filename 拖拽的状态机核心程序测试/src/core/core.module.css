@@ -1,0 +1,70 @@
+.selection_frame {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: -2px;
+  left : -2px;
+  border : 2px solid #999;
+}
+
+.cube{
+  width : 6px;
+  height : 6px;
+  background-color : white;
+  position : absolute;
+  border : 1px solid #999;
+}
+
+.cube_topleft {
+  top : -5px; 
+  left : -5px;
+  cursor : nw-resize;
+}
+
+.cube_topmiddle{
+  top : -5px; 
+  left : calc(50% - 5px);
+  cursor : n-resize;
+}
+
+.cube_topright{
+  top : -5px; 
+  left : calc(100% - 3px);
+  cursor : ne-resize;
+}
+
+.cube_middleright{
+  top : calc(50% - 5px); 
+  left : calc(100% - 3px);
+  cursor : w-resize;
+
+}
+
+.cube_bottomright{
+  top : calc(100% - 3px); 
+  left : calc(100% - 3px);
+  cursor : nw-resize;
+}
+
+.cube_bottommiddle{
+  top : calc(100% - 3px); 
+  left : calc(50% - 5px);
+  cursor : n-resize;
+}
+
+.cube_bottomleft{
+  top : calc(100% - 3px); 
+  left : -5px;
+  cursor : sw-resize;
+
+}
+
+.cube_middleleft{
+  top : calc(50% - 5px); 
+  left : -5px;
+  cursor: w-resize;
+}
+
+
+
+

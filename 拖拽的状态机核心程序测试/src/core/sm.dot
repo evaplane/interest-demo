@@ -1,0 +1,24 @@
+digraph {
+
+
+  rankdir=LR
+  start -> drag_select[label="down@node"];
+  drag_select -> moving[label=move]
+  drag_select -> selected[label=up]
+  selected -> selected[label="down+ctrl"]
+  selected -> selected[label="up"]
+  selected -> moving[label="down@node"]
+  selected -> start[label="down@nothing"]
+  // selected -> selected[label="down+ctrl"]
+  moving -> moving[label="move"]
+  moving -> endmove[label="up"]
+  endmove -> selected;
+
+  // 调整大小的交互
+  selected -> start_resize[label="down@bar"];
+  start_resize -> resize[label="move"];
+  resize -> resize[label="move"]
+  resize -> selected[label="up"];
+
+
+}
